@@ -1,0 +1,15 @@
+package lecture_7_Google_docs.good;
+
+// Concrete implementation for image elements
+public class ImageElement implements DocumentElement {
+    private String imagePath;
+
+    public ImageElement(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
+    @Override
+    public String render() {
+        return "[Image: " + imagePath + "]";
+    }
+}
